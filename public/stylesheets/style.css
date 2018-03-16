@@ -1,0 +1,67 @@
+body {
+  padding: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.red-color {
+  color: #d32f2f !important;
+}
+
+.tiny {
+  height: 15px;
+  width: 15px;
+}
+
+.scroll {
+  max-height: 80% !important;
+  overflow: auto !important;
+}
+
+.top {
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.icon {
+  height: 30px;
+  margin-right: 12px;
+}
+
+/* input color */
+textarea {
+  color: black !important;
+  border-bottom-color: white;
+}
+/* label color */
+.input-field label {
+  color: white;
+}
+/* label focus color */
+.input-field textarea[type=text]:focus + label {
+  color: #000 !important;
+}
+/* label underline focus color */
+.input-field textarea[type=text]:focus {
+  border-bottom: 1px solid #000 !important;
+  box-shadow: none !important;
+}
+/* valid color */
+.input-field textarea[type=text].valid {
+  border-bottom: 1px solid white;
+  box-shadow: 0 1px 0 0 white;
+}
+/* invalid color */
+.input-field textarea[type=text].invalid {
+  border-bottom: 1px solid white;
+  box-shadow: 0 1px 0 0 white;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: black;
+}
+       

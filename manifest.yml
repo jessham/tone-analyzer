@@ -1,0 +1,7 @@
+applications:
+- name: tone-analyzer-pt
+  host: tone-analyzer-pt
+  instance: 1
+  memory: 256M
+  disk_quota: 256M
+domain: mybluemix.net

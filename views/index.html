@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tone Analyzer</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="/javascripts/index.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet"> 
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <!-- <div class="section"> -->
+      <div class="col s10 top">
+        <div class="card large grey lighten-3">
+          <div class="card-content white-text scroll">            
+            <span class="card-title red-color"><img src="/images/tone-analyzer-red.png" alt="" class="icon">Tone Analyzer</span>
+            <div class="input-field col s12">
+              <!-- <i class="material-icons prefix">short_text</i> -->
+              <textarea id="given_text" type="text" class="materialize-textarea"></textarea>
+              <label for="given_text"></label>
+            </div>
+            <div class="col s12">
+              <div class="card horizontal">
+                <div class="card-stacked">
+                  <div class="card-content black-text">
+                    <!-- <p id="info_text">Write a text in the area above then click the 'ANALYZE' button to detect emotional and language tone!</p> -->
+                    <p id="info_text">Escreva um texto na área acima e clique no botão "ANALISAR" para detectar emoções e tons!</p>
+                    <p id="result_text"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="javascript:sendText();" class="red-color">ANALISAR</a>
+            <div class="preloader-wrapper tiny active" id="spinner" style="display:none;">
+              <div class="spinner-layer spinner-red-only">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+  </body>
+</html>
